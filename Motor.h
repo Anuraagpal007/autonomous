@@ -18,14 +18,14 @@ class Motor               //================================Motor CLASS STARTS
   private:
     byte pwm , dir1, dir2;
   public:
-    Motor(byte pwm , byte dir1, byte dir2 = 100) {
+    Motor(byte pwm , byte dir1, byte dir3 = 100) {
       this -> pwm = pwm;
       this -> dir1 = dir1;
       this -> dir2 = dir2;
       this -> dir2 = dir2;
       pinMode(pwm, OUTPUT);
       pinMode(dir1, OUTPUT);
-      pinMode(dir2, OUTPUT);
+      pinMode(dir3, OUTPUT);
     }
     //========================CLOCKWISE OF A MOTOR======================
     void clk (byte p) {
